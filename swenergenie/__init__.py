@@ -28,7 +28,7 @@ fsk_router = None
 ook_router = None
 
 
-def init():
+def init(kvs_path):
     """Start the Energenie system running"""
 
     global registry, fsk_router, ook_router
@@ -46,11 +46,10 @@ def init():
     registry.set_fsk_router(fsk_router)
     ##registry.set_ook_router(ook_router
 
-    if os.path.isfile(registry.DEFAULT_FILENAME):
-        registry.load_from(registry.DEFAULT_FILENAME)
-        print("loaded registry from file")
-        registry.list()
-        fsk_router.list()
+    registry.load_from(kvs_path)
+    print("loaded registry from file")
+    registry.list()
+    fsk_router.list()
 
     # Default discovery mode, unless changed by app
     ##discovery_none()
