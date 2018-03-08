@@ -1,5 +1,0 @@
-setup.py
-sw_energenie.egg-info/PKG-INFO
-sw_energenie.egg-info/SOURCES.txt
-sw_energenie.egg-info/dependency_links.txt
-sw_energenie.egg-info/top_level.txt
