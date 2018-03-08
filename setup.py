@@ -1,3 +1,3 @@
 from setuptools import setup
 
-setup(name='sw-energenie', version='0.1', packages=['sw-energenie'])
+setup(name='swenergenie', version='0.1', packages=['swenergenie'])
